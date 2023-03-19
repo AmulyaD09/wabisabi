@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Amulya</title>
+
+  <!-- AOS
+  all elements and their positions are arranged based on the settings you provide them. 
+  you can add or remove the class with the aos-animate library-->
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <!-- Google material icons 
+  To embed Google Icons in your HTML web pages you have to add the link of material-icons font library 
+  in the <head> section of your HTML file and then add the class material-icons 
+  in the <i> or <span> tag of the <body> section along with the name of the icon-->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+   <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+   <!-- FONT AWESOME
+    c1fdaca455 is the user key for my font awesome kit -->
+  <script src="https://kit.fontawesome.com/c1fdaca455.js" crossorigin="anonymous"></script>
+
+   <!-- TYPE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <!-- jQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- SWEET ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <!-- EMAIL JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("pTAu15uz4wUkRW1ZJ");
+    })();
+  </script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div> 
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Wabi<span> Sabi</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#about" class="menu-btn">About</a></li>
+          <li><a href="#blogs" class="menu-btn">Blogs</a></li>
+          <li><a href="#work" class="menu-btn">Work</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </nav>
+  <!-- Scroll to top button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+    
+  <!-- home section start-->
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1" data-aos="fade-up">Well, A Japanese phrase which means you can find beauty in things </div>
+        <div class="text-2"></div>
+        <div class="text-3"> that are <span class="typing"></span></div>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down" >About Me</h2>
+      <div class="about-content">
+        <div class="column left" data-aos="fade-right" >
+          <img src="images/imageme.jpeg" alt="" />
+        </div>
+        <div class="column right" data-aos="fade-up">
+          <div class="text">
+           Hey! I'm Amulya. Creativity in any form soothes my soul and this is my imperfect attempt of showcasing my work :) I am <span class="typing-2"></span> Currently learning from nature, people and experiences. Feel free to message me to discuss art, perspectives, life and why the hell these words are dancing :P
+          </div>
+          <p class="paragraph">
+          
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blogs Section -->
+  <section class="blogs" id="blogs">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Blogs</h2>
+      <div class="serv-content">
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+           
+            <div class="text"></div>
+            <p>
+             
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+           
+            <div class="text"></div>
+            <p>
+            
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-aos="flip-left">
+          <div class="box">
+            
+            <div class="text"></div>
+            <p>
+             
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- work section -->
+  <section class="work" id="work">
+    <div class="max-width" data-aos="fade-down">
+      <h2 class="title" data-aos="fade-up">My Work</h2>
+      <div class="work-content">
+        <div class="column left">
+          <div class="text">
+          </div>
+          <p class="paragraph-2">
+          </p>
+          <a href="#about"></a>
+        </div>
+        
+        <div class="image-gallery">
+          <img src="images/image1.jpg" alt="" class="gallery-img active" />
+          <img src="images/image2.jpg" alt="" class="gallery-img" />
+          <img src="images/image3.jpg" alt="" class="gallery-img" />
+          <img src="images/image4.jpg" alt="" class="gallery-img" />
+          <img src="images/image5.jpg" alt="" class="gallery-img" />
+          <img src="images/image6.jpg" alt="" class="gallery-img" />
+          <img src="images/image7.jpg" alt="" class="gallery-img" />
+          <img src="images/image8.jpg" alt="" class="gallery-img" />
+          <img src="images/image9.jpg" alt="" class="gallery-img" />
+          <img src="images/image10.jpg" alt="" class="gallery-img" />
+          <img src="images/image11.jpg" alt="" class="gallery-img" />
+          <img src="images/image12.jpg" alt="" class="gallery-img" />
+          <img src="images/image13.jpg" alt="" class="gallery-img" />
+          <img src="images/image14.jpg" alt="" class="gallery-img" />
+          <img src="images/image15.jpg" alt="" class="gallery-img" />
+          <img src="images/image16.jpg" alt="" class="gallery-img" />
+          <img src="images/image17.jpg" alt="" class="gallery-img" />
+          <img src="images/image18.jpg" alt="" class="gallery-img" />
+          <img src="images/image19.jpg" alt="" class="gallery-img" />
+          <img src="images/image20.jpg" alt="" class="gallery-img" />
+          <img src="images/image21.jpg" alt="" class="gallery-img" />
+          <img src="images/image22.jpg" alt="" class="gallery-img" />
+          <img src="images/image23.jpg" alt="" class="gallery-img" />
+          <img src="images/image24.jpg" alt="" class="gallery-img" />
+          <img src="images/image25.jpg" alt="" class="gallery-img" />
+          <img src="images/image26.jpg" alt="" class="gallery-img" />
+          <img src="images/image27.jpg" alt="" class="gallery-img" />
+          <img src="images/image28.jpg" alt="" class="gallery-img" />
+          <img src="images/image29.jpg" alt="" class="gallery-img" />
+          <img src="images/image30.jpg" alt="" class="gallery-img" />
+          <img src="images/image31.jpg" alt="" class="gallery-img" />
+          <img src="images/image32.jpg" alt="" class="gallery-img" />
+          <img src="images/image33.jpg" alt="" class="gallery-img" />
+          <img src="images/image34.jpg" alt="" class="gallery-img" />
+          <img src="images/image35.jpg" alt="" class="gallery-img" />
+          <img src="images/image36.jpg" alt="" class="gallery-img" />
+          <img src="images/image37.jpg" alt="" class="gallery-img" />
+          <img src="images/image38.jpg" alt="" class="gallery-img" />
+          <img src="images/image39.jpg" alt="" class="gallery-img" />
+          <img src="images/image40.jpg" alt="" class="gallery-img" />
+          <img src="images/image41.jpg" alt="" class="gallery-img" />
+          <img src="images/image42.jpg" alt="" class="gallery-img" />
+          <img src="images/image43.jpg" alt="" class="gallery-img" />
+          <img src="images/image44.jpg" alt="" class="gallery-img" />
+          <img src="images/image45.jpg" alt="" class="gallery-img" />
+          <img src="images/image46.jpg" alt="" class="gallery-img" />
+          <img src="images/image47.jpg" alt="" class="gallery-img" />
+          <img src="images/image48.jpg" alt="" class="gallery-img" />
+          <img src="images/image49.jpg" alt="" class="gallery-img" />
+          <img src="images/image50.jpg" alt="" class="gallery-img" />
+          <img src="images/image51.jpg" alt="" class="gallery-img" />
+          <img src="images/image52.jpg" alt="" class="gallery-img" />
+          <img src="images/image53.jpg" alt="" class="gallery-img" />
+          <img src="images/image54.jpg" alt="" class="gallery-img" />
+          <img src="images/image55.jpg" alt="" class="gallery-img" />
+          <img src="images/image56.jpg" alt="" class="gallery-img" />
+          <img src="images/image57.jpg" alt="" class="gallery-img" />
+          <img src="images/image58.jpg" alt="" class="gallery-img" />
+          <img src="images/image59.jpg" alt="" class="gallery-img" />
+          <img src="images/image60.jpg" alt="" class="gallery-img" />
+          <img src="images/image61.jpg" alt="" class="gallery-img" />
+          <img src="images/image62.jpg" alt="" class="gallery-img" />
+          <img src="images/image63.jpg" alt="" class="gallery-img" />
+          <img src="images/image64.jpg" alt="" class="gallery-img" />
+          <img src="images/image65.jpg" alt="" class="gallery-img" />
+          
+        </div>
+        <div class="btns">
+          <button disabled class="btn prev">Prev</button>
+          <button class="btn next">Next</button>
+        </div>
+    
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="max-width">
+      <h2 class="title" data-aos="fade-down">Contact Me</h2>
+      <div class="contact-content">
+        <div class="column left" data-aos="flip-left">
+          <div class="text">Let's Get in Touch</div>
+          <p class="paragraph-3">blah blah blah
+          </p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Amulya</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">Hyderabad, Telangana</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">amulyad99@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right" data-aos="flip-right">
+          <div class="text">
+            Message Me
+          </div>
+          <form action="#Contact">
+            <div class="fields">
+              <div class="field name">
+                <input type="text" id="fromName" placeholder="Name" required autocomplete="off">
+              </div>
+              <div class="field email">
+                <input type="email" id="emailSender" placeholder="Email" required autocomplete="off">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="subjectSender" placeholder="Subject" required autocomplete="off">
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" id="message" placeholder="Message" required autocomplete="off"></textarea>
+            </div>
+            <div class="button">
+              <button onclick='sendMail()' type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section start -->
+  <footer>
+    <div class="text-center">
+      <span>
+        Created By <a href="#">Amulya</a> 
+        <div>
+          <a href="linkedn"><i class="fab fa-linkedin"></i></a>
+          <a href="github"><i class="fab fa-github"></i></a>
+          <a href="insta"><i class="fab fa-instagram"></i></a>
+        </div>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({easing : 'ease-in',delay: 100,duration: 300,offset:100});window.addEventListener('load', AOS.refresh);</script>
+</body>
+
+</html>
