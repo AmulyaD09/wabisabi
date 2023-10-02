@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     function updateSlider() {
-      const translateX = -currentIndex * (galleryImages[0].clientWidth + 10); // 10px for margin
+      const translateX = -currentIndex * (galleryImages[0].clientWidth + 10);
       slider.style.transform = `translateX(${translateX}px)`;
       updateButtonState();
     }
