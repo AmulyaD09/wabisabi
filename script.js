@@ -1,34 +1,72 @@
 
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const galleryImgs = document.querySelectorAll(".gallery-img");
-let currentlySelected = 0;
+// const prevBtn = document.querySelector(".prev");
+// const nextBtn = document.querySelector(".next");
+// const galleryImgs = document.querySelectorAll(".gallery-img");
+// let currentlySelected = 0;
 
 
-prevBtn.addEventListener("click", function() {
-    galleryImgs[currentlySelected].classList.remove("active");
-    currentlySelected--;
-    galleryImgs[currentlySelected].classList.add("active");
-    nextBtn.disabled = false;
+// prevBtn.addEventListener("click", function() {
+//     galleryImgs[currentlySelected].classList.remove("active");
+//     currentlySelected--;
+//     galleryImgs[currentlySelected].classList.add("active");
+//     nextBtn.disabled = false;
 
-    if (currentlySelected === 0 ) {
-        prevBtn.disabled = true;
+//     if (currentlySelected === 0 ) {
+//         prevBtn.disabled = true;
+//     }
+
+// });
+
+// nextBtn.addEventListener("click", function() {
+//     galleryImgs[currentlySelected].classList.remove("active");
+//     currentlySelected++;
+//     galleryImgs[currentlySelected].classList.add("active");
+//     prevBtn.disabled = false;
+
+//     if (galleryImgs.length === currentlySelected + 1 ) {
+//         nextBtn.disabled = true;
+//     }
+
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    const gallery = document.querySelector(".image-gallery");
+    const slider = document.querySelector(".image-slider");
+    const galleryImages = document.querySelectorAll(".gallery-img");
+  
+    let currentIndex = 0;
+  
+    nextButton.addEventListener("click", function () {
+      if (currentIndex < galleryImages.length - 1) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+  
+    prevButton.addEventListener("click", function () {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+  
+    function updateSlider() {
+      const translateX = -currentIndex * (galleryImages[0].clientWidth + 10); // 10px for margin
+      slider.style.transform = `translateX(${translateX}px)`;
+      updateButtonState();
     }
-
-});
-
-nextBtn.addEventListener("click", function() {
-    galleryImgs[currentlySelected].classList.remove("active");
-    currentlySelected++;
-    galleryImgs[currentlySelected].classList.add("active");
-    prevBtn.disabled = false;
-
-    if (galleryImgs.length === currentlySelected + 1 ) {
-        nextBtn.disabled = true;
+  
+    function updateButtonState() {
+      prevButton.disabled = currentIndex === 0;
+      nextButton.disabled = currentIndex === galleryImages.length - 1;
     }
-
-});
-
+  
+    updateButtonState();
+  });
+  
+  
     
 function sendMail(params){
     var tempParams = {

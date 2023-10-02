@@ -242,7 +242,7 @@ section .title::after{
  }
  .about .about-content .right .text{
     color: #23031b;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     margin-bottom: 10px;
  }
@@ -645,30 +645,35 @@ footer i:hover{
 }
 
 
-.gallery-img {
-    display: none;
+.image-gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-slider {
+    display: flex;
+  }
+  
+  .gallery-img {
     max-height: 450px;
+    flex-shrink: 0;
+    margin-right: 10px; /* Add some margin between images */
   }
   
-.active {
-    display: block;
-  }
-  
-.image-gallery {
+  .btns {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-.btns {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-.btn {
+  .btn {
     background-color: #0074d9;
     color: white;
     font-size: 20px;
@@ -678,11 +683,12 @@ footer i:hover{
     cursor: pointer;
   }
   
-.prev {
+  .prev {
     margin-right: 15px;
   }
   
-.btn:disabled {
+  .btn:disabled {
     background-color: #666;
     cursor: not-allowed;
   }
+  
