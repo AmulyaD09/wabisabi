@@ -651,29 +651,29 @@ footer i:hover{
     position: relative;
   }
   
-  .image-gallery {
+.image-gallery {
     display: flex;
     transition: transform 0.5s ease;
   }
   
-  .image-slider {
+.image-slider {
     display: flex;
   }
   
-  .gallery-img {
+.gallery-img {
     max-height: 450px;
     flex-shrink: 0;
     margin-right: 10px; /* Add some margin between images */
   }
   
-  .btns {
+.btns {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .btn {
+.btn {
     background-color: #0074d9;
     color: white;
     font-size: 20px;
@@ -683,11 +683,11 @@ footer i:hover{
     cursor: pointer;
   }
   
-  .prev {
+.prev {
     margin-right: 15px;
   }
   
-  .btn:disabled {
+.btn:disabled {
     background-color: #666;
     cursor: not-allowed;
   }
